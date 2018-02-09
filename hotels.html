@@ -29,7 +29,7 @@
 						<legend>Инфраструктура:</legend>
 						<ul>
 							<li class="filter-option">
-								<input class="visually-hidden" type="checkbox" name="pool" id="filter-pool">
+								<input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
 								<label for="filter-pool">Бассейн</label>
 							</li>
 							<li class="filter-option">
@@ -46,15 +46,15 @@
 						<legend>Тип жилья:</legend>
 						<ul>
 							<li class="filter-option">
-								<input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel">
+								<input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
 								<label for="filter-hotel">Гостиница</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden" type="checkbox" name="motel" id="filter-motel">
+								<input class="visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
 								<label for="filter-motel">Мотель</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden" type="checkbox" name="apartments" id="filter-apart">
+								<input class="visually-hidden" type="checkbox" name="apartments" id="filter-apart" checked>
 								<label for="filter-apart">Апартаменты</label>
 							</li>
 						</ul>
@@ -75,6 +75,96 @@
 						<button class="btn-transparent" type="submit">Показать</button>
 					</fieldset>
 				</form>
+			</section>
+
+			<section class="catalog-sort">
+				<div class="catalog-sort-sum">
+					<span>Найдено: 3</span>
+				</div>
+				<div class="catalog-sort-list">
+					<p>Сортировка:</p>
+					<ul class="sort-list">
+						<li class="sort-active">
+							<a>По цене</a>
+						</li>
+						<li>
+							<a href="#">По типу</a>
+						</li>
+						<li>
+							<a href="#">По рейтингу</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="catalog-sort-icon">
+					<li class="sort-active">
+						<a class="sort-icon-up active" href="#"><span class="visually-hidden">По убыванию</span></a>
+					</li>
+					<li>
+						<a class="sort-icon-down" href="#"><span class="visually-hidden">По возрастанию</span></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="box-item">
+				<article class="result-item">
+					<div class="item-pic">
+						<img src="img/items/Layer 21.jpg" width="135" height="90" alt="hotel">
+					</div>
+					<div class="item-desc">
+						<h2 class="item-desc-name"><a href="#">Amara Resort & Spa</a></h2>
+						<p class="item-desc-title">Гостиница<span>от 4000 р.</span></p>
+						<a class="btn btn-info" href="#">Подробнее</a>
+						<a class="btn btn-reg" href="#">Забронировать</a>
+					</div>
+					<div class="item-rate">
+						<div class="rate-stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+						<p>Рейтинг: 8,5</p>
+					</div>
+				</article>
+
+				<article class="result-item">
+					<div class="item-pic">
+						<img src="img/items/Layer 89 copy.jpg" width="135" height="90" alt="hotel">
+					</div>
+					<div class="item-desc">
+						<h2 class="item-desc-name"><a href="#">Desert Quail Inn</a></h2>
+						<p class="item-desc-title">Мотель<span>от 3000 р.</span></p>
+						<a class="btn btn-info" href="#">Подробнее</a>
+						<a class="btn btn-reg" href="#">Забронировать</a>
+					</div>
+					<div class="item-rate">
+						<div class="rate-stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+						<p>Рейтинг: 8,9</p>
+					</div>
+				</article>
+
+				<article class="result-item">
+					<div class="item-pic">
+						<img src="img/items/Layer 22.jpg" width="135" height="90" alt="hotel">
+					</div>
+					<div class="item-desc">
+						<h2 class="item-desc-name"><a href="#">Villas at Poco Diablo</a></h2>
+						<p class="item-desc-title">Апартаменты<span>от 2000 р.</span></p>
+						<a class="btn btn-info" href="#">Подробнее</a>
+						<a class="btn btn-reg" href="#">Забронировать</a>
+					</div>
+					<div class="item-rate">
+						<div class="rate-stars">
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+						<p>Рейтинг: 9,2</p>
+					</div>
+				</article>
 			</section>
 		</main>
 

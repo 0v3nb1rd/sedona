@@ -239,13 +239,15 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 400;
 	cursor: pointer; 
-	padding-left: 65px;
+	padding-left: 60px;
 }
 
 .price-controls input {
 	width: 50px;
 	margin: 0;
+	margin-left: 5px;
 	color: inherit;
 	font: inherit;
 	background: none;
@@ -287,6 +289,7 @@ input[type="radio"].visually-hidden {
 	padding: 6px 35px;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 400;
 	color: #fff;
 	text-transform: uppercase;
 	background-color: transparent;
@@ -298,6 +301,192 @@ input[type="radio"].visually-hidden {
 .btn-transparent:hover {
 	color: #000;
 	background-color: #fff;
+}
+
+/*      /////      .Sort inner     /////      */
+.catalog-sort {
+	display: flex;
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.catalog-sort-sum {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+.catalog-sort-list {
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	min-width: 350px;
+	margin-left: 50px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.catalog-sort-list p {
+	padding: 0;
+	margin: 0;
+}
+.catalog-sort-list .sort-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.sort-list li {
+	margin-left: 30px;
+}
+.sort-list a {
+	border-bottom: 1px dotted #81b3d2;
+	color: rgba(0,0,0,0.3);
+}
+.sort-list a:not([href]) {
+	color: #81b3d2;
+	border-bottom: none;
+}
+.sort-list a:hover {
+	color: #81b3d2
+}
+.sort-list a:active {
+	color: #000;
+}
+.catalog-sort-icon {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	list-style: none;
+}
+.catalog-sort-icon a {
+	position: relative;
+	display: block;
+	padding: 10px;
+}
+.catalog-sort-icon a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: center ;
+	opacity: 0.3;
+}
+.catalog-sort-icon .sort-icon-up::before {
+	background-image: url("../img/svg-sedona/icon-up-dir.svg");
+}
+.catalog-sort-icon .sort-icon-down::before {
+	background-image: url("../img/svg-sedona/icon-down-dir.svg");
+}
+.catalog-sort-icon a:hover::before {
+	opacity: 1;
+}
+
+/*     /////     .Boxitem inner     /////     */
+.box-item {
+}
+.result-item {
+	display: flex;
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.item-pic {
+	width: 135px;
+	height: 90px;
+}
+.item-desc {
+	display: flex;
+	flex-wrap: wrap;
+	width: 260px;
+	margin-left: 30px;
+}
+.item-desc .item-desc-name {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.item-desc-name a {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000;
+}
+.item-desc-name a:hover {
+	color: #81b3d2;
+	cursor: pointer;
+}
+.item-desc-name a:active {
+	color: rgba(0,0,0,0.3);
+}
+.item-desc .item-desc-title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+.item-desc-title span {
+	margin-left: 40px;
+}
+.item-desc a {
+	/*width: auto;*/
+}
+.item-desc .btn-info{
+	width: 110px;
+}
+.item-desc .btn-info:hover {
+	background-color: #669ec0;
+}
+.item-desc .btn-info:active {
+ background-color: #5496bd;
+ color: rgba(255,255,255,0.3);
+}
+.item-desc .btn-reg {
+	width: 140px;
+	margin-left: 10px;
+	background-color: #766357;
+}
+.item-desc .btn-reg:hover {
+	background-color: #604e43;
+}
+.item-desc .btn-reg:active {
+ background-color: #503e33;
+ color: rgba(255,255,255,0.3);
+}
+
+.item-rate {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: auto;
+	width: 110px;
+}
+.rate-stars {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.rate-stars .star {
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/svg-sedona/star.svg");
+	background-repeat: no-repeat;
+}
+.item-rate p {
+	display: flex;
+	margin: 0;
+	padding: 3px 0;
+
+	justify-content: center;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #666666;
+	background-color: #f2f2f2;
 }
 
 /*     /////     .Features     /////     */
@@ -566,9 +755,16 @@ input[type="radio"].visually-hidden {
 
 /*     /////     .Map      /////     */
 .map .map-old {
+	position: relative;
 	height: 593px;
 }
-
+.map iframe {
+	position: absolute;
+	top: 0;
+	border: none;
+	height: 593px;
+	width: 100%;
+}
 /*      /////      .Footer     /////     */
 .main-footer-index {
 	position: absolute;
