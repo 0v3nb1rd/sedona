@@ -30,6 +30,7 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0;
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 a {
 	text-decoration: none;
@@ -641,6 +642,9 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 	box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
 	opacity: 0.95;
+	z-index: 99;
+}
+.form-none {
 	display: none;
 }
 .popup-form p {
@@ -838,13 +842,3 @@ input[type="radio"].visually-hidden {
 	margin-left: 5px;
 }
 
-
-
-/*.inner-page {
-	color: #000;
-
-	background-color: #f8f5f2;
-	background-image: url("../img/pattern-light.jpg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
-}*/
