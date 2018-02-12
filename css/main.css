@@ -58,7 +58,34 @@ input[type="radio"].visually-hidden {
 }
 
 /*     /////     @Keyframes     /////     */
-
+@keyframes bonce {
+	0% {
+		transform: translate(-50%,-80px);
+	}
+	40% {
+		transform: translate(-50%,10%);
+	}
+	60% {
+		transform: translate(-50%,-40px);
+	}
+	80% {
+		transform: translate(-50%,5%);
+	}
+	100% {
+		transform: translate(-50%,0);
+	}
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(-50%);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-45%);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(-55%);
+	}
+}
 
 /*     /////     .Btn (basic)     /////     */
 
@@ -840,5 +867,15 @@ input[type="radio"].visually-hidden {
 	width: auto;
 	padding: 0 5px;
 	margin-left: 5px;
+}
+
+.modal-show {
+	/*display: block;*/
+	animation-name: bonce;
+	animation-duration: 0.6s;
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
